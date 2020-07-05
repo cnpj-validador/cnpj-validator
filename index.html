@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"></script>
+       
+
+    </head>
+    <body>
+        <container>
+            <h4>O que deseja validar?</h4>
+            <input type="radio" name="cpf" value="cpf"/>CPF<br />
+            <input type="radio" name="cnpj" value="cnpj"/>CNPJ<br />
+        </container>
+        <br>
+        <br>
+
+        <div>
+            <input type="file" id="upload-xls" accept=".xls,.xlsx">
+            <button id="btn-upload-xls">Validar CPF</button>
+            <br>
+            <br>
+            <input type="file" id="upload-cnpj-xls" accept=".xls,.xlsx">
+            <button id="btn-upload-cnpj-xls">Validar CNPJ</button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+        <script src="filesjs/validar_cpf.js"></script>
+        <!--<script src="filesjs/validar_cnpj.js"></script>-->
+    </body>
+</html>
